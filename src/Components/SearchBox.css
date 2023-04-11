@@ -1,7 +1,24 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: blueviolet;
-    border: 5px solid black;
+.Search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
+.Search .SearchInput {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  outline: none;
+}
+.Search .SearchButton {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ccc;
+  margin-left: 10px;
+  outline: none;
+  cursor: pointer;
+}/*# sourceMappingURL=SearchBox.css.map */

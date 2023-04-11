@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './SearchBox.css'
 const punkApi = 'https://api.punkapi.com/v2/beers'
 
 
@@ -13,7 +13,8 @@ const SearchBox = () => {
     }
     SearchBeer()
   return (
-    <div>SearchBox</div>
+    <div className="Search"><button onClick={SearchBeer}
+    ></button>SearchBox</div>
   )
 }
 
