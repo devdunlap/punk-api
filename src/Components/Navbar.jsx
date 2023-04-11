@@ -14,8 +14,11 @@ const NavBox = () => {
     <div>Classic Range</div>
     <div>Special Range</div>
     <div>Acidic/ph</div>
+    <div>
+        <p>test</p>
     </div>
-    )
+    </div>
+    );
 }
 
 

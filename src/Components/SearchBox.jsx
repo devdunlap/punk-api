@@ -13,8 +13,11 @@ const SearchBox = () => {
     }
     SearchBeer()
   return (
-    <div className="Search"><button onClick={SearchBeer}
-    ></button>SearchBox</div>
+    <div className="Search">
+      <input type="text" />
+      <button onClick={SearchBeer} >SearchBox</button>
+      </div>
+   
   )
 }
 

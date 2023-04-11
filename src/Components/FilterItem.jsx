@@ -1,15 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './FilterItem.css';
-const FilterItem = () => {
-  const [res, setRes] = useState([]);
-  useEffect(() => {
-    (async () => {
-      const url = 'https://api.punkapi.com/v2/beers'
-      const res = await fetch(url)
-      const data = await res.json()
-      setRes(data);
-    })();
-  }, []);
+const FilterItem = (props) => {
+  const {res} = props;
+  
     return res.map(res => <div className ="filter-item">
       <div className="card grey darken-4">
         <div className="card-image">
