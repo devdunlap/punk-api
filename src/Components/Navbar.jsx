@@ -1,14 +1,15 @@
 import React from 'react'
 import SearchBox from './SearchBox'
+import './Navbar.css'
 
 
-const Navbar = () => {
+const NavBox = () => {
  
  
  
     return (
     
-    <div>
+    <div className="navbar" style= {{flex: 1}}>
     <SearchBox/>
     <div>Classic Range</div>
     <div>Special Range</div>
@@ -18,4 +19,4 @@ const Navbar = () => {
 }
 
 
-export default Navbar
+export default NavBox

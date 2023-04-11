@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
 import FiltersList from './Components/FiltersList'
+import './App.css';
 
 const App = () => {
   return (
-    <div>
-      <h1>Top Level</h1>
+    <div className="app" style={{display: 'flex', flexDirection: 'row'}}>
     <Navbar />
     <FiltersList/>
     </div>
