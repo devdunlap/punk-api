@@ -15,7 +15,7 @@ const SearchBox = ({ search, setSearch }) => {
   return (
     <div className="Search">
       <input type="text" value={search} onChange={e => setSearch(e.target.value)} />
-      <button onClick={SearchBeer} >SearchBox</button>
+      <button onClick={SearchBeer} ></button>
       </div>
    
   )
