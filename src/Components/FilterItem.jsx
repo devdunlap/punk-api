@@ -1,9 +1,15 @@
 import React from 'react';
 import './FilterItem.css';
 const FilterItem = (props) => {
-  const {res} = props;
+  const {res, range, search} = props;
+
+  const filteredRes = res
+    .filter(beer => range === 'classic' ? beer.abv>6 : true)
+    .filter(beer => range === 'special' ? beer.abv<4.5 : true)
+    .filter(beer => range === 'acidic' ? beer.ph<4.5 : true)
+    .filter(beer => beer.name.includes(search))
   
-    return res.map(res => <div className ="filter-item">
+    return filteredRes.map(res => <div className ="filter-item">
       <div className="card grey darken-4">
         <div className="card-image">
           <img style={{aspectRatio: 1, objectFit: 'cover'}} src={res.image_url} alt={res.name} />

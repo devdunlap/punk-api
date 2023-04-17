@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react';
 
 const App = () => {
   const [res, setRes] = useState([]);
+  const [range, setRange] = useState('');
+  const [search, setSearch] = useState('')
   useEffect(() => {
     (async () => {
       const url = 'https://api.punkapi.com/v2/beers'
@@ -16,8 +18,8 @@ const App = () => {
   }, []);
   return (
     <div className="app" style={{display: 'flex', flexDirection: 'row'}}>
-    <Navbar />
-    <FiltersList res={res}/>
+    <Navbar setRange={setRange} search={search} setSearch={setSearch} />
+    <FiltersList search={search} res={res} range={range}/>
     </div>
   )
 }
